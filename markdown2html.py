@@ -2,7 +2,6 @@
 """ change markdown to html """
 import sys
 import os
-import re
 
 
 if __name__ == '__main__':
@@ -20,3 +19,4 @@ if __name__ == '__main__':
     if not (os.path.exists(markDownFile) and os.path.isfile(markDownFile)):
         print(f'Missing {markDownFile}', file=sys.stderr)
         exit(1)
+    exit(0)
