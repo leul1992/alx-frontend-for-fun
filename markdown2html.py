@@ -13,11 +13,10 @@ if __name__ == '__main__':
         exit(1)
 
     # Store the arguments into variables
-    input_file = sys.argv[1]
-    output_file = sys.argv[2]
+    markDownFile = sys.argv[1]
+    htmlFile = sys.argv[2]
 
     # Checks that the markdown file exists and is a file
-    if not (os.path.exists(input_file) and os.path.isfile(input_file)):
-        print(f'Missing {input_file}', file=sys.stderr)
+    if not (os.path.exists(markDownFile) and os.path.isfile(markDownFile)):
+        print(f'Missing {markDownFile}', file=sys.stderr)
         exit(1)
-    exit(0)
